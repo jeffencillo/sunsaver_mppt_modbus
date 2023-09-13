@@ -18,6 +18,7 @@ hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily, Ahc_daily, Ahl_daily, Array_
 Sample output:
 
 Time,hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily,Ahc_daily, Ahl_daily, Array_Fault, Load_Fault, Va_max_daily, absortion_time(hr), eq(hr), float(hr)
+
 2023-08-14,23281,RTS OPEN,13.2537841796875,14.0045166015625,8.4,1.5,Battery HVD (High Voltage Disconnect),no faults,34.9853515625,0.65,0.0,0.0
 2023-08-15,23305,RTS OPEN,13.2568359375,14.0228271484375,8.0,1.6,Battery HVD (High Voltage Disconnect),no faults,34.796142578125,1.0,0.0,0.0
 2023-08-16,23329,RTS OPEN,13.2537841796875,13.983154296875,7.4,1.2000000000000002,Battery HVD (High Voltage Disconnect),no faults,34.8846435546875,0.8,0.0,0.0
