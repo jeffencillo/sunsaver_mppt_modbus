@@ -2,9 +2,11 @@
 **sunsaver_log.py** - download the 32 days logged data from Morningstar MPPT Sunsaver charge controller thru TCP/IP Modbus protocol
 
 Command syntax:  python sunsaver_log.py “ip address” >> "xxxx_powerhealth_ddmmyy.log"
+
 "xxxx" any 4 character name, "ddmmyy" date format (usually current date)
 
 Sample output:
+
 hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily, Ahc_daily, Ahl_daily, Array_Fault, Load_Fault, Va_max_daily, absortion_time(hr), eq(hr), float(hr)
 9227,RTS OPEN,13.226318359375,14.24560546875,15.3,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,36.8438720703125,0.6333333333333333,0.0,0.0
 9251,RTS OPEN,13.2354736328125,14.2425537109375,14.8,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,37.921142578125,0.31666666666666665,0.0,0.0
