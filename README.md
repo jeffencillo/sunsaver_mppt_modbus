@@ -1,11 +1,8 @@
 # sunsaver_mppt_modbus
-
-This is a python script that download the 32 days logged data from Morningstar MPPT Sunsaver charge controller thru TCP/IP Modbus protocol.
-
-Command syntax:  python sunsaver_log.py “ip address”
-
+**sunsaver_log.py** - download the 32 days logged data from Morningstar MPPT Sunsaver charge controller thru TCP/IP Modbus protocol
+Command syntax:  python sunsaver_log.py “ip address” >> "xxxx_powerhealth_ddmmyy.log"
+"xxxx" any 4 character name, "ddmmyy" date format (usually current date)
 Sample output:
-
 hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily, Ahc_daily, Ahl_daily, Array_Fault, Load_Fault, Va_max_daily, absortion_time(hr), eq(hr), float(hr)
 9227,RTS OPEN,13.226318359375,14.24560546875,15.3,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,36.8438720703125,0.6333333333333333,0.0,0.0
 9251,RTS OPEN,13.2354736328125,14.2425537109375,14.8,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,37.921142578125,0.31666666666666665,0.0,0.0
@@ -17,3 +14,27 @@ hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily, Ahc_daily, Ahl_daily, Array_
 9394,RTS OPEN,13.232421875,14.24560546875,14.5,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,36.627197265625,0.7,0.0,0.0
 9418,RTS OPEN,13.238525390625,14.24560546875,14.4,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,37.445068359375,0.7333333333333333,0.0,0.0
 9442,RTS OPEN,13.24462890625,14.24560546875,14.700000000000001,13.600000000000001,Battery HVD (High Voltage Disconnect),no faults,37.274169921875,0.5,0.0,0.0
+
+**add_timestamp.py** - add time stamp to the downloaded logged data and save csv file
+
+Sample output:
+
+Time,hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily,Ahc_daily, Ahl_daily, Array_Fault, Load_Fault, Va_max_daily, absortion_time(hr), eq(hr), float(hr)
+2023-08-14,23281,RTS OPEN,13.2537841796875,14.0045166015625,8.4,1.5,Battery HVD (High Voltage Disconnect),no faults,34.9853515625,0.65,0.0,0.0
+2023-08-15,23305,RTS OPEN,13.2568359375,14.0228271484375,8.0,1.6,Battery HVD (High Voltage Disconnect),no faults,34.796142578125,1.0,0.0,0.0
+2023-08-16,23329,RTS OPEN,13.2537841796875,13.983154296875,7.4,1.2000000000000002,Battery HVD (High Voltage Disconnect),no faults,34.8846435546875,0.8,0.0,0.0
+2023-08-17,23353,RTS OPEN,13.250732421875,14.0106201171875,9.3,1.3,Battery HVD (High Voltage Disconnect),no faults,35.015869140625,1.8333333333333333,0.0,0.0
+2023-08-18,23377,RTS OPEN,13.250732421875,14.068603515625,8.5,1.3,Battery HVD (High Voltage Disconnect),no faults,34.9609375,0.7,0.0,0.0
+2023-08-19,23401,RTS OPEN,13.2568359375,13.7054443359375,6.6000000000000005,1.1,no faults,no faults,34.46044921875,0.05,0.0,0.0
+2023-08-20,23425,RTS OPEN,13.250732421875,13.3819580078125,2.6,1.1,no faults,no faults,33.367919921875,0.0,0.0,0.0
+2023-08-21,23449,RTS OPEN,13.2354736328125,13.4521484375,6.300000000000001,1.2000000000000002,no faults,no faults,33.7921142578125,0.0,0.0,0.0
+2023-08-22,23473,RTS OPEN,13.2354736328125,13.48876953125,10.9,1.6,no faults,no faults,34.4329833984375,0.0166666666666666,0.0,0.0
+2023-08-23,23497,RTS OPEN,13.2293701171875,13.4521484375,7.1000000000000005,1.4,no faults,no faults,33.8409423828125,0.0,0.0,0.0
+2023-08-24,23521,RTS OPEN,13.232421875,13.4918212890625,13.9,2.0,no faults,no faults,34.478759765625,0.0,0.0,0.0
+
+
+
+
+
+
+
