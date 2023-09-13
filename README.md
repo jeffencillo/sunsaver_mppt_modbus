@@ -24,8 +24,7 @@ Time,hourmeter, alarm_daily, Vb_min_daily, Vb_max_daily,Ahc_daily, Ahl_daily, Ar
 2023-08-16,23329,RTS OPEN,13.2537841796875,13.983154296875,7.4,1.2000000000000002,Battery HVD (High Voltage Disconnect),no faults,34.8846435546875,0.8,0.0,0.0
 
 
-
-
+if you have any questions about this program please email me at jeffencillo@gmail.com
 
 
 
